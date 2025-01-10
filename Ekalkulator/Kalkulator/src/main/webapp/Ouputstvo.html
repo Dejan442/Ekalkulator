@@ -1,0 +1,58 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text with Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('otpornik.jpg') no-repeat center center/cover;
+            z-index: -1;
+        }
+
+        .text-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .animated-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            animation: moveText 5s ease-out forwards;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="text-container">
+        <div class="animated-text">Uzmite otpornik u ruke okrenite ga tako da vam na levoj strani budu tri pruge,
+        prve dve pruge oznacavaju prve dve cifre vrednosti otpornika treća pruga je množač ona množi prethodne dve cifre i odredjuje vrednost otpora samog otpornika, četvrta pruga označava toleranciju otpornika</div>
+    </div>
+</body>
+</html>

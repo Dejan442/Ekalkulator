@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Izbor Pravougaonika</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('otpornik.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        
+          button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .rectangle {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+
+        .color1 { background-color: #000000; }
+        .color2 { background-color: #442200; }
+        .color3 { background-color: #ff0022; }
+        .color4 { background-color: #ff8822; }
+        .color5 { background-color: #ffff66; }
+        .color6 { background-color: #228866; }
+        .color7 { background-color: #0000ff; }
+        .color8 { background-color: #8800aa; }
+        .color9 { background-color: grey; }
+        .color10 { background-color: white; }
+       
+       
+       .color11 { background-color: #c0c0c0; }
+        .color12 { background-color: #d4af37; }
+        .color13 { background-color: #000000; }
+       .color14 { background-color: #442200; }
+        .color15 { background-color: #ff0022; }
+        .color16 { background-color: #ff8822; }
+        .color17 { background-color: #ffff66; }
+        .color18 { background-color: #228866; }
+        .color19 { background-color: #0000ff; }
+        .color20 { background-color: #8800aa; }
+        .color21 { background-color: grey; }
+        .color22 { background-color: white; }
+        
+        
+        .color23 { background-color: #c0c0c0; }
+        .color24 { background-color: #d4af37; }
+        .color25 { background-color: #442200; }
+        .color26 { background-color: #ff0022; }
+        .color27 { background-color: #228866; }
+        .color28 { background-color: #0000ff; }
+        .color29 { background-color: #8800aa; }
+        
+        
+        
+        
+       
+       
+       
+    </style>
+</head>
+<body>
+    <h1>Izaberite po jedan pravougaonik iz svake grupe</h1>
+
+    <!-- Form koji šalje vrednosti -->
+   <form action="otpor" method="post">
+        <div class="container">
+            <!-- Prvi red -->
+            <div class="row">
+                <input type="radio" name="val1" value="0" id="r10"><label for="r10" class="rectangle color1"></label>
+                <input type="radio" name="val1" value="1" id="r20"><label for="r20" class="rectangle color2"></label>
+                <input type="radio" name="val1" value="2" id="r30"><label for="r30" class="rectangle color3"></label>
+                <input type="radio" name="val1" value="3" id="r40"><label for="r40" class="rectangle color4"></label>
+                <input type="radio" name="val1" value="4" id="r50"><label for="r50" class="rectangle color5"></label>
+                <input type="radio" name="val1" value="5" id="r60"><label for="r60" class="rectangle color6"></label>
+                <input type="radio" name="val1" value="6" id="r70"><label for="r70" class="rectangle color7"></label>
+                <input type="radio" name="val1" value="7" id="r80"><label for="r80" class="rectangle color8"></label>
+                <input type="radio" name="val1" value="8" id="r90"><label for="r90" class="rectangle color9"></label>
+                <input type="radio" name="val1" value="9" id="r100"><label for="r100" class="rectangle color10"></label>
+            </div>
+
+            <!-- Drugi red -->
+            <div class="row">
+                <input type="radio" name="val2" value="0" id="r15"><label for="r15" class="rectangle color1"></label>
+                <input type="radio" name="val2" value="1" id="r25"><label for="r25" class="rectangle color2"></label>
+                <input type="radio" name="val2" value="2" id="r35"><label for="r35" class="rectangle color3"></label>
+                <input type="radio" name="val2" value="3" id="r45"><label for="r45" class="rectangle color4"></label>
+                <input type="radio" name="val2" value="4" id="r55"><label for="r55" class="rectangle color5"></label>
+                <input type="radio" name="val2" value="5" id="r65"><label for="r65" class="rectangle color6"></label>
+                 <input type="radio" name="val2" value="6" id="r35"><label for="r35" class="rectangle color7"></label>
+                <input type="radio" name="val2" value="7" id="r45"><label for="r45" class="rectangle color8"></label>
+                <input type="radio" name="val2" value="8" id="r55"><label for="r55" class="rectangle color9"></label>
+                <input type="radio" name="val2" value="9" id="r65"><label for="r65" class="rectangle color10"></label>
+                
+                
+                
+                
+                
+            </div>
+
+            <!-- Treći red -->
+            <div class="row">
+                <input type="radio" name="val3" value="0.01" id="r12"><label for="r12" class="rectangle color11"></label>
+                <input type="radio" name="val3" value="0.1" id="r22"><label for="r22" class="rectangle color12"></label>
+                <input type="radio" name="val3" value="1" id="r32"><label for="r32" class="rectangle color13"></label>
+                 <input type="radio" name="val3" value="10" id="r35"><label for="r35" class="rectangle color14"></label>
+                <input type="radio" name="val3" value="100" id="r45"><label for="r45" class="rectangle color15"></label>
+                <input type="radio" name="val3" value="1000" id="r55"><label for="r55" class="rectangle color16"></label>
+                <input type="radio" name="val3" value="10000" id="r65"><label for="r65" class="rectangle color17"></label>
+                 <input type="radio" name="val3" value="100000" id="r35"><label for="r35" class="rectangle color18"></label>
+                <input type="radio" name="val3" value="1000000" id="r45"><label for="r45" class="rectangle color19"></label>
+                <input type="radio" name="val3" value="10000000" id="r55"><label for="r55" class="rectangle color20"></label>
+                <input type="radio" name="val3" value="100000000" id="r65"><label for="r65" class="rectangle color21"></label>
+                <input type="radio" name="val3" value="1000000000" id="r65"><label for="r65" class="rectangle color22"></label>
+            </div>
+
+            <!-- Četvrti red -->
+            <div class="row">
+                <input type="radio" name="val4" value="10" id="r14"><label for="r14" class="rectangle color23"></label>
+                <input type="radio" name="val4" value="5" id="r24"><label for="r24" class="rectangle color24"></label>
+                <input type="radio" name="val4" value="1" id="r34"><label for="r34" class="rectangle color25"></label>
+                 <input type="radio" name="val4" value="2" id="r35"><label for="r35" class="rectangle color26"></label>
+                <input type="radio" name="val4" value="0.5" id="r45"><label for="r45" class="rectangle color27"></label>
+                <input type="radio" name="val4" value="0.25" id="r55"><label for="r55" class="rectangle color28"></label>
+                <input type="radio" name="val4" value="0.1" id="r65"><label for="r65" class="rectangle color29"></label>
+            </div>
+
+            <!-- Dugme za slanje forme -->
+            <div style="margin: 10px;">
+               <div class="button"> <button type="submit">Izračunaj</button></div><br> </form>
+
+  <div class="button">  <button type="submit" name="Uputsvo">Uputstvo</button></div>
+    
+    </form>
+            </div>
+            
+        </div>
+   
+</body>
+</html>

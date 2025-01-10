@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('trafo3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        .form-container input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="Tr" method="post">
+            <input type="text" name="UP" placeholder="Up-Napon primara" required>
+            <input type="text" name="US" placeholder="Us-Napon sekundara" required>
+             <input type="text" name="NP" placeholder="Np-Broj navojaka primara" required>
+            <div>
+           
+                <button type="submit" >Proračunaj</button>
+                <div class="tooltip">
+        
+                    <button type="button">Uputstvo</button>
+                    <div class="tooltiptext">Za proračun transformatora potrebno je uneti ulazni podatke za napon primara,napon sekundara i broj namotaja na primaru, program proračunava broj potrebnih namotaja sekundara za napon sekundara koji korisnik želi da dobije na izlazu, kao i struje primara i sekundara</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
